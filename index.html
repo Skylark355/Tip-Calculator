@@ -20,7 +20,12 @@
         <input type="radio" name="tipOption" id="customTip" checked />
         <label for="customTip">Customer</label>
 
-        <input type="radio" name="tipOption" id="serviceRating" />
+        <input
+          type="radio"
+          name="tipOption"
+          id="serviceRating"
+          onchange="toggleDivVisibility()"
+        />
         <label for="serviceRating">Service Rating</label>
       </div>
 
@@ -34,7 +39,7 @@
         />
       </div>
 
-      <div class="input-group" id="serviceRatingInput" style="display: none;">
+      <div class="input-group" id="serviceRatingInput" style="display: none">
         <label for="serviceRatingSelect">Select Service Rating</label>
         <select name="" id="serviceRatingSelect">
           <!-- <option value="">-Select Service Rating-</option> -->
@@ -65,12 +70,13 @@
 
       <div class="result">
         <h2>Result:</h2>
-        <div id="tipAmount"></div>
         <div id="totalAmount"></div>
+        <div id="tipAmount"></div>
         <div id="amountPerPerson"></div>
       </div>
 
-      <button>Calculate</button>
+      <button onclick="submit()">Calculate</button>
+      <button onclick="reset()">Reset</button>
     </div>
     <script src="./script.js"></script>
   </body>
