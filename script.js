@@ -1,6 +1,7 @@
 const billAmount = document.getElementById("billAmount");
 const customTipAmount = document.getElementById("customTipAmount");
 const splitCount = document.getElementById("splitCount");
+const mealType = document.getElementById("mealType");
 
 // const submitBtn = document.getElementById("")
 const totalAmount = document.getElementById("totalAmount");
@@ -29,6 +30,7 @@ function reset() {
   billAmount.value = "";
   customTipAmount.value = "";
   splitCount.value = "";
+//   mealType.value = "";
 
   totalAmount.innerHTML = "";
   tipAmount.innerHTML = "";
@@ -49,4 +51,3 @@ function toggleDivVisibility() {
     serviceRatingInputDiv.style.display = "none";
   }
 }
-

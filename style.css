@@ -4,3 +4,93 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ddc7f0;
+}
+
+.container {
+  justify-content: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 390px;
+  height: 560px;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2d0356;
+  color: #f1f0e8;
+  box-shadow: 0px 0px 18px 0px #cecdcd;
+  transition: 1s ease box-shadow;
+}
+
+.card h1 {
+  font-size: 1.7rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card:hover {
+  transition: 2s ease;
+  transform: scale(1.1);
+  background-color: #443651;
+
+}
+
+.input-group {
+  margin: 5px;
+}
+
+.input-group select {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+
+.input-group label {
+  /* margin 20px; */
+}
+
+.input-group input[type="number"] {
+  height: 30px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  /* margin-top: 50px; */
+}
+
+.card button {
+  height: 30px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.card button:hover {
+  cursor: pointer;
+  background-color: #ddc7f0;
+  outline: none;
+  border: none;
+}
+
+.result {
+  margin: 10px;
+}
+
+.result h2 {
+  font-size: 18px;
+}
